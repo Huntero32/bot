@@ -1499,7 +1499,7 @@ client.on('message', (msgObj) => {
 
 Util.log('-CONNECTING-');
 
-client.login(Auth.discordToken);
+client.login(process.env.BOT_TOKEN);
 
 process.on('unhandledRejection', (err) => {
     console.error(`Uncaught Promise Error: \n${err.stack}`);
